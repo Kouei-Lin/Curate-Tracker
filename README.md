@@ -10,12 +10,42 @@ The `fetch_registry.py` script fetches monthly curate data from the following re
 
 
 # Clone to local
-1. `git clone https://github.com/Kouei-Lin/Curate-Tracker`
-2. `cd Curate-Tracker`
-3. `cp .env.example .env`, modify the registries addresses if migration happens.
-4. `cd src` to the script folder.
-5. `pip install -r requirements.txt` to install dependencies.
-6. `python3 fetch_registry.py` to run the script.
-7. A `fetch_registry.csv` will be generated locally. 
-8. Modify **start_date** and **end_date** at **line 99-100** in `fetch_registry.py` to specify the time range.
-9. Open `registry_show.ipynb` for further analysis on the csv data.
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/Kouei-Lin/Curate-Tracker
+    cd Curate-Tracker
+    ```
+
+2. Copy the `.env.example` file and modify the registry addresses if migration happens:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+    Edit the `.env` file to update the registry addresses as needed.
+
+3. Navigate to the script folder:
+
+    ```bash
+    cd src
+    ```
+
+4. Install the required dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. Run the script to fetch data:
+
+    ```bash
+    python3 fetch_registry.py
+    ```
+
+    This will generate a `fetch_registry.csv` file locally.
+
+6. Modify the `start_date` and `end_date` at line 99-100 in `fetch_registry.py` to specify the time range.
+
+7. Open `registry_show.ipynb` for further analysis of the CSV data.
+
