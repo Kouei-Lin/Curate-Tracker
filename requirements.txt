@@ -2,5 +2,6 @@ pandas
 numpy
 seaborn
 matplotlib
+jupyter
 requests
 python-decouple
